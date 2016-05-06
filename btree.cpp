@@ -184,13 +184,13 @@ void btree::add(int valueIn, node *leaf)
 
 bool btree::treeSame(node *leafA, node *leafB)
 {
-    // to cut down on code further down the functions, and to make in more easily readable, the variables bellow represent if a childe node exists using
+    // to cut down on code further down the function, and to make in more easily readable, the variables bellow represent if a childe node exists using
     // 1 or 0.
 
-    int leafAleft = (leafA->left == NULL) ? 0 : 1;      // simpler ternary calculation if A node has a left child
-    int leafBleft = (leafB->left == NULL) ? 0 : 1;      // simpler ternary calculation if B node has a left child
-    int leafAright = (leafA->right == NULL) ? 0 : 1;    // simpler ternary calculation if A node has a right child
-    int leafBright = (leafB->right == NULL) ? 0 : 1;    // simpler ternary calculation if B node has a right child
+    int leafAleft = (leafA->left == NULL) ? 0 : 1;      // simple ternary calculation if A node has a left child
+    int leafBleft = (leafB->left == NULL) ? 0 : 1;      // simple ternary calculation if B node has a left child
+    int leafAright = (leafA->right == NULL) ? 0 : 1;    // simple ternary calculation if A node has a right child
+    int leafBright = (leafB->right == NULL) ? 0 : 1;    // simple ternary calculation if B node has a right child
 
     // check data value first, if not the same return false
     if (leafA->dataValue != leafB->dataValue)
